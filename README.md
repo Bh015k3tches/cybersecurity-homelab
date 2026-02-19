@@ -108,3 +108,110 @@ How to document service verification professionally.
 Next Steps:
 Explore other common services safely (e.g., HTTP, SSH).
 Integrate findings into a cohesive portfolio on GitHub.
+
+
+
+
+
+
+
+
+
+Installing DVWA (Damn Vulnerable Web Application) on Kali Linux
+
+This guide explains how to install and set up DVWA on Kali Linux for learning and practicing web application security.
+Important: This is for educational purposes only. Do not use DVWA on production systems or public servers.
+
+Table of Contents
+
+What is DVWA?
+Prerequisites
+Installing DVWA
+Configuring DVWA
+Accessing DVWA
+Resources
+
+What is DVWA?
+DVWA (Damn Vulnerable Web Application) is a PHP/MySQL web application designed to be intentionally vulnerable. It is a safe environment for practicing security techniques, such as:
+
+SQL Injection
+Cross-Site Scripting (XSS)
+Command Injection
+CSRF (Cross-Site Request Forgery)
+Prerequisites
+
+Before installing DVWA, make sure you have:
+
+Kali Linux installed (latest version recommended)
+Apache web server, MySQL/MariaDB, and PHP installed
+Optional: phpMyAdmin for easier database management
+
+You can install Apache, MySQL, and PHP on Kali Linux with:
+sudo apt update
+sudo apt install apache2 mysql-server php php-mysqli php-gd libapache2-mod-php -y
+
+Start the services:
+
+sudo systemctl start apache2
+sudo systemctl start mysql
+sudo systemctl enable apache2
+sudo systemctl enable mysql
+
+
+Installing DVWA
+
+Download DVWA from GitHub:
+
+cd /var/www/html
+sudo git clone https://github.com/digininja/DVWA.git
+
+Set proper permissions:
+
+sudo chown -R www-data:www-data DVWA
+sudo chmod -R 755 DVWA
+
+
+
+Configuring DVWA
+
+Copy the configuration file:
+
+cd DVWA/config
+sudo cp config.inc.php.dist config.inc.php
+
+Edit the config.inc.php file to match your database settings:
+
+// Example settings:
+$_DVWA[ 'db_user' ] = 'root';
+$_DVWA[ 'db_password' ] = 'YOUR_MYSQL_ROOT_PASSWORD';
+$_DVWA[ 'db_database' ] = 'dvwa';
+
+
+Create the DVWA database:
+
+sudo mysql -u root -p
+CREATE DATABASE dvwa;
+EXIT;
+
+
+Accessing DVWA
+
+Open your web browser and go to:
+http://localhost/DVWA/setup.php
+
+Click Create / Reset Database to finish setup.
+
+Log in using the default credentials:
+Username: admin
+Password: password
+
+
+Start practicing! You can adjust the security level in the DVWA interface.
+
+Resources
+
+DVWA GitHub: https://github.com/digininja/DVWA
+Official Kali Linux: https://www.kali.org
+Video Guide: Installing DVWA on Kali Linux
+
+Tip: Always use DVWA in a local virtual machine or isolated environment to avoid exposing vulnerabilities to the public internet.
