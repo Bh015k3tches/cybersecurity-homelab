@@ -44,7 +44,7 @@ What I Learned:
 
 
 
-Lab 2 – Basic Network Scanning with Nmap
+# Lab 2 – Basic Network Scanning with Nmap
 
 Goal: Identify active hosts and open ports within a private subnet.
 
@@ -80,7 +80,7 @@ Document findings professionally for GitHub.
 
 
 
-Lab 3 – DNS Service Verification
+# Lab 3 – DNS Service Verification
 
 Goal: Verify that network services are operational and understand their purpose.
 
@@ -117,7 +117,7 @@ Integrate findings into a cohesive portfolio on GitHub.
 
 
 
-Installing DVWA (Damn Vulnerable Web Application) on Kali Linux
+# Installing DVWA (Damn Vulnerable Web Application) on Kali Linux
 
 This guide explains how to install and set up DVWA on Kali Linux for learning and practicing web application security.
 Important: This is for educational purposes only. Do not use DVWA on production systems or public servers.
