@@ -215,3 +215,51 @@ Official Kali Linux: https://www.kali.org
 Video Guide: Installing DVWA on Kali Linux
 
 Tip: Always use DVWA in a local virtual machine or isolated environment to avoid exposing vulnerabilities to the public internet.
+
+
+# Hackathon #1 – Cybersecurity / AI / OSINT / Forensics Challenge
+Overview
+
+This repository documents my first cybersecurity-focused hackathon experience. The competition included multiple domains such as OSINT, web security, AI-based tasks, and digital forensics using log analysis tools.
+
+I placed 3rd overall in a duo team competing against larger teams (3–4 members), and completed all main sections of the event.
+
+# 
+Domains Covered
+OSINT (Open Source Intelligence):
+Extracted and correlated public information from social media profiles (X.com)
+Analyzed email and CV-based information for identity and context linking
+Performed structured recon using publicly available data sources
+
+Web Security:
+Solved web-based challenges including SQL injection concepts
+Navigated authentication and admin-access style scenarios
+Understood basic exploitation logic in controlled environments
+
+AI-Based Tasks:
+Worked with AI-assisted challenge prompts
+Handled scenarios involving restricted or unauthorized data requests
+Applied prompt-based reasoning under constraints
+
+Digital Forensics (Chainsaw / Log Analysis):
+Investigated Windows event log–style data using Chainsaw
+Analyzed timestamps and detection events
+Identified anomalies in security logs (partial success in this section)
+
+Outcome:
+3rd Place Finish
+Completed all required sections of the competition
+Strong performance in OSINT and web-based challenges
+Key improvement area: forensic log analysis speed and tool familiarity
+
+Key Takeaways:
+Exposure to multi-domain cybersecurity workflows under time pressure
+Real experience with OSINT investigation techniques and web exploitation logic
+Introduction to forensic tooling and structured log analysis
+Identified gap in speed and familiarity with incident response tools (Chainsaw)
+
+Future Focus:
+Improve Windows event log analysis and detection workflows
+Strengthen forensic tooling and Sigma rule understanding
+Increase speed in CTF-style problem solving
+Build deeper consistency across cyber domains
